@@ -1,0 +1,96 @@
+
+ROM used:   2490/8192 (30%)
+            2611/8192 (32%) including unused fragments
+
+            1.3 Average locations per line
+            7.9 Average locations per statement
+
+RAM used:   16/368 (4%) at main() level
+            42/368 (11%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  202   172  54  main.c
+    8     0   0  main.h
+  751     0   0  ..\..\..\..\..\Program Files\PICC\Devices\16F886.h
+  329    25   8  ..\..\..\..\..\Program Files\PICC\Drivers\internal_eeprom.c
+  456    84  26  ..\..\..\..\..\Program Files\PICC\Drivers\lcd.c
+   93    22   7  1wire.c
+   27    14   4  ds1820.c
+----- -----
+ 1866   317 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   1    1             @delay_ms1
+0     17   1    1             @delay_us1
+ Inline         3   596  5.9  lcd_read_byte
+0      6   0    0    59  4.2  lcd_read_nibble
+0     13   1    1   179  3.3  lcd_send_nibble
+0     64   3    3   460  4.7  lcd_send_byte
+0     62   2    6   814  7.2  lcd_init
+0     18   1    4   208  6.3  lcd_gotoxy
+0     44   2    1   354  4.7  lcd_putc
+0     25   1    1    86  1.3  onewire_reset
+0     32   1    2   272  4.3  onewire_write
+0     37   1    2   284  4.6  onewire_read
+0    316  13   13   490  3.7  ds1820_read
+ Inline         2             @SITOF
+ Inline        14             @DIVFF
+0    352  14    1  2767  6.9  config
+0      7   0    0             @const709
+0     86   3    4             @PSTRINGC7_671
+0      7   0    0             @const711
+0      8   0    0             @const712
+0      8   0    0             @const713
+0      6   0    0             @const715
+0      6   0    0             @const716
+0     87   3    5             @PSTRINGCN7_671
+0     21   1    3             @DIV88
+0     87   3    6             @PRINTF_D_671
+0      6   0    0             @const725
+0      9   0    0             @const727
+0      6   0    0             @const729
+0      6   0    0             @const730
+0      6   0    0             @const731
+0      9   0    0             @const733
+1    563  23    5  3270  9.4  MAIN
+0      3   0    0             @const741
+0      8   0    0             @const742
+ Inline        13             @MULFF
+ Inline         5             @FTOSD
+0     79   3   13             @DIV3232
+0    341  14   13             @PRINTF_L32D_671FPFPF
+0     29   1    2             @ITOF
+0     63   3   10             @FLT
+0     10   0    0             @const764
+0      8   0    0             @const765
+0      5   0    0             @const767
+0      6   0    0             @const768
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               13
+    Statements              317
+    Comments                391
+    Volume (V)              14499
+    Difficulty (D)          61.4
+    Effort to implement (E) 890233
+    Time to implement (T)   13 hours, 44 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   29
+    Maintainability (MI)    122
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1923  121  
+00800-00FFF   563  1485  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
